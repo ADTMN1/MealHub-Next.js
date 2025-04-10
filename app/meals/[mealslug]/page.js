@@ -2,7 +2,9 @@
 export default function page() {
     return (
         <div>
-            community
+
+            <d><h1>meal post</h1></d>
+
         </div>
     )
 }
