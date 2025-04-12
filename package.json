@@ -12,7 +12,9 @@
     "better-sqlite3": "^11.9.1",
     "next": "15.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "slugify": "^1.6.6",
+    "xss": "^1.0.15"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
