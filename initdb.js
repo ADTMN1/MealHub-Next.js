@@ -2,13 +2,13 @@ const sql = require('better-sqlite3');
 const db = sql('meals.db');
 
 const dummyMeals = [
-    {
-        title: 'Juicy Cheese Burger',
-        slug: 'juicy-cheese-burger',
-        image: '/images/collective.jpg',
-        summary:
-            'A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.',
-        instructions: `
+   {
+      title: 'Juicy Cheese Burger',
+      slug: 'juicy-cheese-burger',
+      image: '/images/burger.jpg',
+      summary:
+         'A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.',
+      instructions: `
       1. Prepare the patty:
          Mix 200g of ground beef with salt and pepper. Form into a patty.
 
@@ -21,16 +21,16 @@ const dummyMeals = [
       4. Serve:
          Complete the assembly with the top bun and serve hot.
     `,
-        creator: 'John Doe',
-        creator_email: 'johndoe@example.com',
-    },
-    {
-        title: 'Spicy Curry',
-        slug: 'spicy-curry',
-        image: '/images/curry.jpg',
-        summary:
-            'A rich and spicy curry, infused with exotic spices and creamy coconut milk.',
-        instructions: `
+      creator: 'John Doe',
+      creator_email: 'johndoe@example.com',
+   },
+   {
+      title: 'Spicy Curry',
+      slug: 'spicy-curry',
+      image: '/images/curry.jpg',
+      summary:
+         'A rich and spicy curry, infused with exotic spices and creamy coconut milk.',
+      instructions: `
       1. Chop vegetables:
          Cut your choice of vegetables into bite-sized pieces.
 
@@ -46,16 +46,16 @@ const dummyMeals = [
       5. Serve:
          Enjoy this creamy curry with rice or bread.
     `,
-        creator: 'Max Schwarz',
-        creator_email: 'max@example.com',
-    },
-    {
-        title: 'Homemade Dumplings',
-        slug: 'homemade-dumplings',
-        image: '/images/dumplings.jpg',
-        summary:
-            'Tender dumplings filled with savory meat and vegetables, steamed to perfection.',
-        instructions: `
+      creator: 'Max Schwarz',
+      creator_email: 'max@example.com',
+   },
+   {
+      title: 'Homemade Dumplings',
+      slug: 'homemade-dumplings',
+      image: '/images/dumplings.jpg',
+      summary:
+         'Tender dumplings filled with savory meat and vegetables, steamed to perfection.',
+      instructions: `
       1. Prepare the filling:
          Mix minced meat, shredded vegetables, and spices.
 
@@ -68,16 +68,16 @@ const dummyMeals = [
       4. Serve:
          Enjoy these dumplings hot, with a dipping sauce of your choice.
     `,
-        creator: 'Emily Chen',
-        creator_email: 'emilychen@example.com',
-    },
-    {
-        title: 'Classic Mac n Cheese',
-        slug: 'classic-mac-n-cheese',
-        image: '/images/macncheese.jpg',
-        summary:
-            "Creamy and cheesy macaroni, a comforting classic that's always a crowd-pleaser.",
-        instructions: `
+      creator: 'Emily Chen',
+      creator_email: 'emilychen@example.com',
+   },
+   {
+      title: 'Classic Mac n Cheese',
+      slug: 'classic-mac-n-cheese',
+      image: '/images/macncheese.jpg',
+      summary:
+         "Creamy and cheesy macaroni, a comforting classic that's always a crowd-pleaser.",
+      instructions: `
       1. Cook the macaroni:
          Boil macaroni according to package instructions until al dente.
 
@@ -93,16 +93,16 @@ const dummyMeals = [
       5. Serve:
          Serve hot, garnished with parsley if desired.
     `,
-        creator: 'Laura Smith',
-        creator_email: 'laurasmith@example.com',
-    },
-    {
-        title: 'Authentic Pizza',
-        slug: 'authentic-pizza',
-        image: '/images/pizza.jpg',
-        summary:
-            'Hand-tossed pizza with a tangy tomato sauce, fresh toppings, and melted cheese.',
-        instructions: `
+      creator: 'Laura Smith',
+      creator_email: 'laurasmith@example.com',
+   },
+   {
+      title: 'Authentic Pizza',
+      slug: 'authentic-pizza',
+      image: '/images/pizza.jpg',
+      summary:
+         'Hand-tossed pizza with a tangy tomato sauce, fresh toppings, and melted cheese.',
+      instructions: `
       1. Prepare the dough:
          Knead pizza dough and let it rise until doubled in size.
 
@@ -115,16 +115,16 @@ const dummyMeals = [
       4. Serve:
          Slice hot and enjoy with a sprinkle of basil leaves.
     `,
-        creator: 'Mario Rossi',
-        creator_email: 'mariorossi@example.com',
-    },
-    {
-        title: 'Wiener Schnitzel',
-        slug: 'wiener-schnitzel',
-        image: '/images/schnitzel.jpg',
-        summary:
-            'Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.',
-        instructions: `
+      creator: 'Mario Rossi',
+      creator_email: 'mariorossi@example.com',
+   },
+   {
+      title: 'Wiener Schnitzel',
+      slug: 'wiener-schnitzel',
+      image: '/images/schnitzel.jpg',
+      summary:
+         'Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.',
+      instructions: `
       1. Prepare the veal:
          Pound veal cutlets to an even thickness.
 
@@ -137,16 +137,16 @@ const dummyMeals = [
       4. Serve:
       Serve hot with a slice of lemon and a side of potato salad or greens.
  `,
-        creator: 'Franz Huber',
-        creator_email: 'franzhuber@example.com',
-    },
-    {
-        title: 'Fresh Tomato Salad',
-        slug: 'fresh-tomato-salad',
-        image: '/images/tomato-salad.jpg',
-        summary:
-            'A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.',
-        instructions: `
+      creator: 'Franz Huber',
+      creator_email: 'franzhuber@example.com',
+   },
+   {
+      title: 'Fresh Tomato Salad',
+      slug: 'fresh-tomato-salad',
+      image: '/images/tomato-salad.jpg',
+      summary:
+         'A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.',
+      instructions: `
       1. Prepare the tomatoes:
         Slice fresh tomatoes and arrange them on a plate.
     
@@ -159,9 +159,9 @@ const dummyMeals = [
       4. Serve:
          Enjoy this simple, flavorful salad as a side dish or light meal.
     `,
-        creator: 'Sophia Green',
-        creator_email: 'sophiagreen@example.com',
-    },
+      creator: 'Sophia Green',
+      creator_email: 'sophiagreen@example.com',
+   },
 ];
 
 db.prepare(`
@@ -178,7 +178,7 @@ db.prepare(`
 `).run();
 
 async function initData() {
-    const stmt = db.prepare(`
+   const stmt = db.prepare(`
       INSERT INTO meals VALUES (
          null,
          @slug,
@@ -191,9 +191,9 @@ async function initData() {
       )
    `);
 
-    for (const meal of dummyMeals) {
-        stmt.run(meal);
-    }
+   for (const meal of dummyMeals) {
+      stmt.run(meal);
+   }
 }
 
 initData();
